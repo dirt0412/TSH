@@ -1,5 +1,4 @@
 "use strict";
-
 exports.errorHandler = (err, req, res, next) => {
   console.log(res.headersSent);
   if (res.headersSent) {
