@@ -1,7 +1,9 @@
+"use strict";
+
 const Post = require("./post/post.model");
 const express = require("express");
 const app = express();
-//const port = 3000;
+const port = 3000;
 const postsService = require("./service/postsService");
 
 app.post("/posts", (req, res) => {
@@ -57,6 +59,6 @@ app.delete("/posts/:postId", (req, res) => {
     });
 });
 
-//app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 module.exports = app;

@@ -1,11 +1,13 @@
+"use strict";
+
 let posts = [];
 
-addPost = post => {
+exports.addPost = post => {
   posts.push(post);
   return Promise.resolve(post);
 };
 
-getPostById = postId => {
+exports.getPostById = postId => {
   let post = posts.find(post => post.id === postId);
   if (!post) {
     return Promise.reject("Error occurred");
@@ -13,7 +15,7 @@ getPostById = postId => {
   return Promise.resolve(post);
 };
 
-removePost = postId => {
+exports.removePost = postId => {
   let postIndex = posts.findIndex(post => post.id === postId);
   if (postIndex < 0) {
     return Promise.reject("Error occurred");
@@ -22,6 +24,6 @@ removePost = postId => {
   return Promise.resolve();
 };
 
-getPosts = () => {
+exports.getPosts = () => {
   return Promise.resolve(posts);
 };
