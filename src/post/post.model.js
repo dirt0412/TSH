@@ -1,4 +1,4 @@
-const { v4 } = require('uuid');
+const { v4 } = require("uuid");
 
 class Post {
   constructor(id, title, content) {
@@ -28,7 +28,7 @@ class Post {
       id: this._id,
       title: this._title,
       content: this._content
-    }
+    };
   }
 }
 
