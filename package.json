@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/thesoftwarehouse/node-recruitement-example#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-validator": "^5.3.1",
     "uuid": "^3.3.2"
   },
